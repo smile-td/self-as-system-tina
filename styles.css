@@ -1,0 +1,209 @@
+/*
+font-family
+font-size
+font-weight
+font-style
+line-height
+text-decoration
+text-align
+color
+background-color
+
+//consider:
+height
+width
+opacity
+display
+border-top
+border-right
+border-bottom
+border-left
+margin-top
+margin-right
+margin-bottom
+margin-left
+padding-top
+padding-right
+padding-bottom
+padding-left
+box-shadow
+position
+top
+right
+bottom
+left
+*/
+
+body{
+    width:100%;
+    height:100vh;
+    margin: 0 auto;
+    padding: 0;
+    font-family:"montserrat";
+    background:repeating-linear-gradient(to right, #ffdf9e,#ffc273,#e56969,#c1558b,#8a49a1);
+    background-size: 400%;
+    animation: bganimation 5s ease-in-out infinite;
+}
+
+h1{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    text-align: center;
+    text-decoration: underline dotted red;
+    font-size: 80px;
+    font-family: Futura;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h2{
+    position: absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    text-align: center;
+    font-size: 30px;
+    font-family: Futura;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+h3{
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    text-align: center;
+    font-size: 30px;
+    font-family: Futura;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+h4{
+    position: absolute;
+    top:88%;
+    left:57%;
+    
+    color:black;
+    text-align: right;
+    font-size: 20px;
+    font-family: Futura;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+h5{
+    position: absolute;
+    top:0%;
+    left:95%;
+    transform: translate(-90%, -0%);
+    text-align: right;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+h6{
+    position: absolute;
+    top:0%;
+    left:95%;
+    transform: translate(-90%, -10%);
+    text-align: right;
+    font-size: 150px;
+    letter-spacing: 1px;
+}
+
+h7{
+    position: absolute;
+    top:0%;
+    left:5%;
+    transform: translate(-90%, -10%);
+    text-align: right;
+    font-size: 150px;
+    letter-spacing: 1px;
+}
+
+@keyframes bganimation {
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+
+.icon{
+    display:flex;
+    justify-content: center;
+    margin: 30% 0 0 0%;
+   
+}
+
+
+.icon ul li{
+    display: inline-block;
+    margin: auto 25px;
+    text-align: center;
+    
+    font-size:180px;
+    color:white;
+    cursor:pointer;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.icon ul li:nth-child(1):hover{
+    color: #dc565b;
+}
+
+.icon ul li:nth-child(2):hover{
+    color: #dc565b;
+}
+
+.icon ul li:nth-child(3):hover{
+    color: #dc565b;
+}
+
+p {
+    animation: comments 6s steps(100);
+    overflow:hidden;
+    white-space:nowrap;
+    font-family:Futura;
+    font-weight: 100;
+    border-right: 3px solid black;
+    width: 110ch;
+    color: white;
+}
+
+p2 {
+    overflow:hidden;
+    font-family:Futura;
+    font-weight: 100;
+    color: red;
+}
+
+@keyframes comments {
+    0% {
+        width:0ch;
+    }
+    100%{
+        width:110ch;
+    }
+}
+
+video{
+    width: 45ch;
+    display:flex;
+    justify-content: center;
+    margin: 12% 36%;
+    
+}
